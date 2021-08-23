@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SIMPLE FORM</title>
+  </head>
+  <body>
+    <form action="url_to_send_form_data" method="post">
+      <fieldset>
+        <!-- your code will go here-->
+        <div>
+          <!-- this creates a dropdown list-->
+          <label for="title">Title:</label></div><br/>
+          <select id="title">
+            <option value="Mr">Mr</option>
+            <option value="Mrs">Mrs</option>
+            <option valie="Ms">Ms</option>
+            <option value="Miss">Miss</option>
+          </select>
+        </div>
+        <div>
+          <!-- this creates a first name field -->
+          <label for="first_name">First name:</label><br/>
+          <input type="text" name="firstname" id="first_name"/>
+        </div>
+        <div>
+          <!-- this creates a last name field-->
+          <label for="last_name">Last name:</label><br/>
+          <input type="text" name="lastname" id="last_name"/>
+        </div>
+        <!-- this creates a message field -->
+        <div>
+          <label for="message">Message:</label><br />
+          <textarea id="message" rows="5" cols="20"></textarea>
+        </div>
+        <!-- this creates a button-->
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
