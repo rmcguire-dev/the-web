@@ -1,6 +1,5 @@
 THE STRUCTURE OF FORMS
 
-Reference
 Element: <form>...</form>
 Attributes: {action, method}
 Example: <form action="url_to_send_form_data" method="post">...</form>
