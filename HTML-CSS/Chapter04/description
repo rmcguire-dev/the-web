@@ -1,1 +1,34 @@
 THE STRUCTURE OF FORMS
+
+Reference
+Element: <form>...</form>
+Attributes: {action, method}
+Example: <form action="url_to_send_form_data" method="post">...</form>
+
+Element: <input.../>
+Attributes: {type, name, maxlength, value}
+Example: <input type="text" name="firstname" />
+
+Element: <label>...</label>
+Attributes: {for, id}
+Example: <label for="first_name">...</label>
+
+Element: <textarea>...</textarea>
+Attributes: {id, rows, cols}
+Example: <textarea id="message" rows="5" cols="20"></textarea>
+
+Element: <fieldset>...</fieldset>
+Attributes: {}
+Example: This element is used to delineate sections of a large form.
+
+Element: <select>...</select>
+Attributes: {id}
+Example: <select id="countries">...</select>
+
+Element: <option>...</option>
+Attributes: {value}
+Example: The option element is nested within a select element to create a list of choices.
+
+Element: <button>...</button>
+Attributes: {type}
+Example: <button type="submit">Submit</button>
