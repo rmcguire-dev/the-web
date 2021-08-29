@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Online Property Portal Website</title>
+    <style>
+
+      body{
+        width: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h1{
+        margin-left: 25px;
+      }
+
+      fieldset{
+        border:0;
+        padding:0;
+        width: 900px;
+      }
+
+      select{
+        border:2px solid crimson;
+        padding:10px;
+        width: 200px;
+      }
+
+      label {
+        margin-right: 15px;
+        line-height: 35px;
+        width: 150px;
+      }
+
+      .top, .middle, .bottom{
+        display: flex;
+        padding: 10px;
+      }
+
+      .top label, .middle label, .bottom label{
+        font-weight: bold;
+        margin-left: 15px;
+      }
+
+      .checkbox {
+        margin-left: 180px;
+        margin-right: 10px;
+        width: auto;
+      }
+
+      .checkbox + label {
+        font-size: small;
+        width: auto;
+        line-height: 20px;
+        margin-top: 8px;
+        margin-left: 1px;
+      }
+
+      button {
+        float: right;
+        margin: 50px 110px 15px 0px;
+        background: green;
+        border: 0;
+        color: white;
+        width: 224px;
+        padding: 10px;
+        text-transform: uppercase;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Property for sale in London</h1>
+    <form action="url_to_send_form_data" method="post">
+      <fieldset>
+          <div class="top">
+            <!-- Search radius dropdown-->
+            <label for="search_radius">Search radius:</label>
+            <select id="search_radius"> ... </select>
+            
+            <!-- Property type dropdown-->
+            <label for="property-type">Property type:</label>
+            <select id="property-type"> ... </select>
+          </div>
+
+          <div class="middle">
+            <!-- Price range dropdown-->
+            <label for="price-range">Price range:</label>
+            <select id="price-range"> ... </select>
+
+            <!-- Added to site dropdown-->
+            <label for="added_to_site">Added to site:</label>
+            <select id="added_to_site"></select>
+          </div>
+
+          <div class="bottom">
+            <!-- Bedrooms dropdown-->
+            <label for="bedrooms">Bedrooms:</label>
+            <select id="bedrooms"></select>
+
+            <!-- Include sold properties checkbox -->
+            <input id="properties" class="checkbox" type="checkbox" name="include-sold-properties">
+            <label for="properties">Include sold properties</label>
+          </div>
+        
+          <!-- Find properties button -->
+          <button type="submit">Find properties</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
